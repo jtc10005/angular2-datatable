@@ -1,4 +1,4 @@
-import {Directive, Input, EventEmitter, SimpleChange, OnChanges, DoCheck} from "@angular/core";
+import { Directive, Input, EventEmitter, SimpleChange, OnChanges, DoCheck} from "@angular/core";
 import * as _ from "lodash";
 
 export interface SortEvent {
@@ -20,6 +20,7 @@ export interface DataEvent {
     selector: 'table[mfData]',
     exportAs: 'mfDataTable'
 })
+
 export class DataTable implements OnChanges, DoCheck {
 
     @Input("mfData") public inputData:any[] = [];
